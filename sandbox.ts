@@ -1,38 +1,27 @@
-let character: string;
-let age: number;
-let isLoggedIn: boolean;
+let age: any = 25;
 
-age = 30;
+age = true;
+console.log(age);
+age = "hello";
+age = { name: "rahul" };
+console.log(age)
 
-isLoggedIn = true;
+let mixed: any[] = [];
 
-let ninjas: string[] = [];
+mixed.push(20)
+mixed.push('hello');
+mixed.push(true)
 
-ninjas.push("rahul");
+console.log("Mixed: " + mixed)
 
-// Union Types
-let mixed: (string | number)[] = [];
+let obj: {
+  name:any,
+  age:any,
+}
 
-mixed.push("hello");
-mixed.push(20);
+obj = {name: "rahul", age:29}
+console.log(obj);
 
-console.log(mixed);
+obj = {name:25,age:"kiran"}
+console.log(obj)
 
-// Objects
-let ninjaOne: object;
-
-ninjaOne = {
-  name: "Rahul",
-  age: 29,
-  skills: ["Node.js", "JavaScript", "Docker", "kubernetes"],
-};
-
-console.log(ninjaOne);
-
-let ninjaTwo: {
-  name: string;
-  age: number;
-  beltColour: string;
-};
-
-ninjaTwo = { name: "Rahul", age: 29, beltColour: "black" };

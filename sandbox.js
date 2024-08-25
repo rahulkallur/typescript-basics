@@ -1,22 +1,16 @@
-var character;
-var age;
-var isLoggedIn;
-age = 30;
-isLoggedIn = true;
-var ninjas = [];
-ninjas.push("rahul");
-// Union Types
+var age = 25;
+age = true;
+console.log(age);
+age = "hello";
+age = { name: "rahul" };
+console.log(age);
 var mixed = [];
-mixed.push("hello");
 mixed.push(20);
-console.log(mixed);
-// Objects
-var ninjaOne;
-ninjaOne = {
-    name: "Rahul",
-    age: 29,
-    skills: ["Node.js", "JavaScript", "Docker", "kubernetes"],
-};
-console.log(ninjaOne);
-var ninjaTwo;
-ninjaTwo = { name: "Rahul", age: 29, beltColour: "black" };
+mixed.push('hello');
+mixed.push(true);
+console.log("Mixed: " + mixed);
+var obj;
+obj = { name: "rahul", age: 29 };
+console.log(obj);
+obj = { name: 25, age: "kiran" };
+console.log(obj);
